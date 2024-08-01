@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Interface para API</title>
+  <title>Usuario</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Criar Usuário</h1>
+  <h1>Criar Usuario</h1>
   <form id="create-user-form">
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome"><br><br>
@@ -14,7 +15,7 @@
     <input type="email" id="email" name="email"><br><br>
     <label for="pass">Senha:</label>
     <input type="password" id="pass" name="pass"><br><br>
-    <button type="submit">Criar Usuário</button>
+    <button type="submit">Criar Usuario</button>
   </form>
 
   <script>
@@ -45,5 +46,12 @@ createUserForm.addEventListener('submit', async (e) => {
   }
 });
   </script>
+
+  <style>
+    body{
+    background-color: aqua;
+    }
+  </style>
+
 </body>
 </html>

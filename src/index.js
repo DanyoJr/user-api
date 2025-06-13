@@ -107,7 +107,7 @@ app.post('/', async (req, res) => {
 
 app.listen(port, ()=> {  
     console.log('server run');
-    mongoose.connect('mongodb+srv://dani004yo:pr6eq8h1hDlTuoWA@cluster0.grrugpa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+    mongoose.connect('');
 
 
 })

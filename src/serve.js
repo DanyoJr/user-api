@@ -8,15 +8,15 @@ const server = http.createServer((req, res) => {
     //setando o conteudo do header
     res.setHeader('Content-Type', 'text/html');
 
-    let path = './interface/';
+    let path = './';
 
     switch(req.url){
         case '/':
-            path += 'index.html';
+            path += 'interface/index.html';
             res.statusCode = 200;
             break;
 
-         case '/index.html':
+         case 'interface/index.html':
             res.statusCode = 301;
             res.setHeader('Location', '/');
             res.end()
